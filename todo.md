@@ -1,5 +1,8 @@
 - [ ] disable adding secondaries
-- [ ] readme
-- [ ] shared mapping?
 - [ ] always skip @softarc/native-federation
+- [ ] 
+- [ ] comments in build script and code
+- [ ] readme
+
+- [ ] shared mapping?
 - [ ] facade?

@@ -1,19 +1,25 @@
-const { withNativeFederation, shareAll } = require('@softarc/native-federation/build');
+const {
+  withNativeFederation,
+  shareAll,
+} = require("@softarc/native-federation/build");
 
 module.exports = withNativeFederation({
-
-  name: 'remote',
+  name: "remote",
 
   exposes: {
-    './module': 'remote/src/is-long-weekend.ts',
+    "./module": "remote/src/is-long-weekend.ts",
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    ...shareAll({
+      singleton: true,
+      strictVersion: true,
+      requiredVersion: "auto",
+      includeSecondaries: false,
+    }),
   },
 
-  skip: [
-    '@softarc/native-federation'
-  ]
-
+  // skip: [
+  //   '@softarc/native-federation'
+  // ]
 });
