@@ -8,6 +8,7 @@ module.exports = withNativeFederation({
 
   exposes: {
     "./module": "remote/src/is-long-weekend.ts",
+    "./react-remote": "remote/src/react-app.tsx",
   },
 
   shared: {
