@@ -11,6 +11,7 @@
     "module": "esnext",
     "lib": ["ES2020", "dom"],
     "types": ["node"],
+    "jsx": "react",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": "."

@@ -1,10 +1,8 @@
 import * as esbuild from 'esbuild';
 import * as path from 'path';
 import * as fs from 'fs';
-import { esBuildAdapter } from './esbuild-adapter';
 import { federationBuilder } from '@softarc/native-federation/build';
-
-const { commonjs } = require("@hyrious/esbuild-plugin-commonjs");
+import { esBuildAdapter } from '@softarc/native-federation-esbuild';
 
 export async function buildProject(projectName) {
 
